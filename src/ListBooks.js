@@ -4,6 +4,7 @@ import BookShelf from './BookShelf';
 
 class ListBooks extends Component {
 	render() {
+		console.log(this.props.books);
 		return (
 			<div className="list-books">
             <div className="list-books-title">
@@ -11,9 +12,9 @@ class ListBooks extends Component {
             </div>
             <div className="list-books-content">
               <div>
-                <BookShelf bookShelfName="Currently Reading"/>
-                <BookShelf bookShelfName="Want to Read"/>
-                <BookShelf bookShelfName="Read"/>
+                <BookShelf books={this.props.books} bookShelfName="currentlyReading" bookShelfTitle="Currently Reading"/>
+                <BookShelf books={this.props.books} bookShelfName="wantToRead" bookShelfTitle="Want to Read"/>
+                <BookShelf books={this.props.books} bookShelfName="read" bookShelfTitle="Read"/>
               </div>
             </div>      
             <div className="open-search">
