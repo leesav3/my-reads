@@ -12,7 +12,7 @@ class BookShelf extends Component {
                 	// *** used udacity study jam 21/07 by maeva nap for syntax and explanation of following code
                 	this.props.books.filter(book => book.shelf === this.props.bookShelfName).map(book => (
                 		<li key={book.id}>
-                			<Book book={book}/>
+                			<Book book={book} moveBookToShelf={this.props.moveBookToShelf} bookShelfName={this.props.bookShelfName}/>
                 		</li>
                 	))
                 	// ***
