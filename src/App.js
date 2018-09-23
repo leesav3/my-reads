@@ -26,7 +26,7 @@ class BooksApp extends React.Component {
     BooksAPI.update(book, shelf).then(() => {
       this.getBooks();
       // if we are moving a book to shelf from the search page, display the listbooks page
-      if (window.location.pathname === "/search") {
+      if (window.location.pathname.indexOf("/search") > -1) {
         window.location = "/";
       }
     })

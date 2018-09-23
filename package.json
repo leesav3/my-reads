@@ -1,6 +1,6 @@
 {
   "name": "my-reads",
-  "homepage": "https://leesav3.github.io/my-reads/",
+  "homepage": "https://leesav3.github.io/my-reads",
   "dependencies": {
     "escape-string-regexp": "^1.0.5",
     "gh-pages": "^2.0.0",
