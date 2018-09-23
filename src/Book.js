@@ -6,7 +6,6 @@ class Book extends Component {
 	/* handleChange from
 	https://stackoverflow.com/questions/28868071/onchange-event-using-react-js-for-drop-down
 	*/
-
 	handleChange = (event) => {
 		this.props.moveBookToShelf(this.props.book, event.target.value);
 	}
